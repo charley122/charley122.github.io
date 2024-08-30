@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +9,18 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            background-color: #f4f4f4;
             color: #333;
         }
+
+        nav {
+            background-color: #0044cc;
+            padding: 1em 2em;
 
         nav {
             background-color: #0044cc;
@@ -23,8 +31,16 @@
             color: white;
             margin: 0 1em;
             text-decoration: none;
+
+        nav a {
+            color: white;
+            margin: 0 1em;
+            text-decoration: none;
             font-weight: bold;
         }
+
+        nav a:hover {
+            text-decoration: underline;
 
         nav a:hover {
             text-decoration: underline;
@@ -37,7 +53,18 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
             max-width: 936px;
+
+        .content {
+            padding: 3em 2em;
+            background-color: white;
+            margin: 2em auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 936px;
         }
+
+        .introduction {
+            margin-top: 2em;
 
         .introduction {
             margin-top: 2em;
@@ -46,7 +73,14 @@
         h1,
         h2 {
             color: #0044cc;
+
+        h1,
+        h2 {
+            color: #0044cc;
         }
+
+        h1 {
+            margin-top: 0;
 
         h1 {
             margin-top: 0;
@@ -54,13 +88,18 @@
 
         p {
             line-height: 1.6;
+
+        p {
+            line-height: 1.6;
         }
+
 
         .footer {
             text-align: center;
             padding: 20px;
             background-color: #f1f1f1;
         }
+
 
         .footer img {
             max-width: 80px;
@@ -74,10 +113,27 @@
             padding: 0 2em;
         }
 
+
+        /* Align nav and content for same left margin */
+        .wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2em;
+        }
+
     </style>
 </head>
 
+
 <body>
+    <div class="wrapper">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="committee.html">Committee</a>
+            <a href="call_for_papers.html">Call for Papers</a>
+        </nav>
+        <div class="content">
+            <h1>Conference Committee</h1>
     <div class="wrapper">
         <nav>
             <a href="index.html">Home</a>
@@ -91,7 +147,16 @@
             <p>Qinping Zhao, Beihang University, China</p>
             <p>Yongtian Wang, Beijing Institute of Technology, China</p>
             <p>Henry Duh, Hong Kong Polytechnic University, China</p>
+            <h2>General Chairs</h2>
+            <p>Qinping Zhao, Beihang University, China</p>
+            <p>Yongtian Wang, Beijing Institute of Technology, China</p>
+            <p>Henry Duh, Hong Kong Polytechnic University, China</p>
 
+            <h2>Program Committee Chairs</h2>
+            <p>Christian Sandor, Université Paris-Saclay, France</p>
+            <p>Frank Guan, Singapore Institute of Technology, Singapore</p>
+            <p>Weitao Song, Beijing Institute of Technology, China</p>
+            <p>Guofeng Zhang, Zhejiang University, China</p>
             <h2>Program Committee Chairs</h2>
             <p>Christian Sandor, Université Paris-Saclay, France</p>
             <p>Frank Guan, Singapore Institute of Technology, Singapore</p>
@@ -100,10 +165,17 @@
 
             <h2>Local Organization Chair</h2>
             <p>Shihui Guo, Xiamen University, China</p>
+            <h2>Local Organization Chair</h2>
+            <p>Shihui Guo, Xiamen University, China</p>
 
             <h2>Publication Chair</h2>
             <p>Junjun Pan, Beihang University, China</p>
+            <h2>Publication Chair</h2>
+            <p>Junjun Pan, Beihang University, China</p>
 
+            <h2>Publicity Chair</h2>
+            <p>Lin Lu, Shandong University, China</p>
+        </div>
             <h2>Publicity Chair</h2>
             <p>Lin Lu, Shandong University, China</p>
         </div>
@@ -112,7 +184,12 @@
             <p>Sponsored by <strong>CCF</strong></p>
             <img src="screenshot-20240828-143707.png" alt="CCF Logo">
         </div>
+        <div class="footer">
+            <p>Sponsored by <strong>CCF</strong></p>
+            <img src="screenshot-20240828-143707.png" alt="CCF Logo">
+        </div>
     </div>
 </body>
+
 
 </html>
