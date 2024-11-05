@@ -12,15 +12,21 @@
             background-color: #f4f4f4; 
             color: #333;
         }
-        nav { 
-            background-color: #5DBBF2; 
-            padding: 1em 2em; 
+        nav {
+            background-color: #5DBBF2;
+            padding: 1em 2em;
+            display: flex; /* 使用flex布局 */
+            justify-content: center; /* 根据需要调节，如space-between或center */
+            flex-wrap: nowrap; /* 禁止换行 */
         }
-        nav a { 
-            color: white; 
-            margin: 0 1em; 
-            text-decoration: none; 
+
+        nav a {
+            color: white;
+            margin: 0 0.5em; /* 增加了间距的灵活性 */
+            text-decoration: none;
             font-weight: bold;
+            white-space: nowrap; /* 防止文本换行 */
+            font-size: 18px; /* 适当减少字体大小 */
         }
         nav a:hover { 
             text-decoration: underline; 
